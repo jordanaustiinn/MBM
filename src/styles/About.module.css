@@ -1,0 +1,137 @@
+.container {
+  margin-top: 10px;
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  background-color: #6e7f629e;
+  gap: 30px;
+
+  color: #e0dcd9d2;
+  width: 100vw;
+  text-align: justify;
+}
+.container h2 {
+  /* width: 60%; */
+  width: 50%;
+  font-size: 30px;
+  text-align: left;
+  text-align: justify;
+  order: -2;
+}
+.text {
+  /* width: 50%; */
+  width: 70%;
+  padding: 20px 10px;
+  line-height: 1.5;
+}
+.image {
+  background: url(../../public/images/about-fotka.jpg) no-repeat center
+    center/cover;
+  width: 30%;
+  order: -1;
+  height: 400px;
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
+}
+.image2 {
+  background: url(../../public/images/logo-edit.png) no-repeat center
+    center/cover;
+  margin: 20px;
+  width: 30%;
+  height: 400px;
+}
+@media (max-width: 1290px) {
+  .container {
+    padding-top: 2rem;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .container h2 {
+    width: 40%;
+    font-size: 25px;
+    text-align: left;
+  }
+  .text {
+    width: 80%;
+    padding: 20px 20px 15px;
+    border-radius: 5px;
+  }
+  .image {
+    width: 30%;
+  }
+  .image2 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 830px) {
+  .image {
+    width: 50%;
+    height: 500px;
+    order: -1;
+  }
+  .container {
+    height: 100%;
+    gap: 10px;
+  }
+  .container h2 {
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 5px 20px;
+    order: -2;
+  }
+  .text {
+    width: 70%;
+    height: 100%;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: justify;
+  }
+  .image2 {
+    width: 60%;
+    height: 400px;
+    margin: 0px 0px;
+  }
+}
+@media (max-width: 620px) {
+  .image {
+    width: 60%;
+    height: 400px;
+    order: -1;
+    text-align: justify;
+  }
+}
+@media (max-width: 440px) {
+  .container h2 {
+    width: 80%;
+    font-size: 17px;
+    text-align: center;
+    padding: 20px 5px 20px;
+    order: -2;
+  }
+  .text {
+    width: 80%;
+    height: 100%;
+    font-size: 15px;
+    padding: 5px;
+    text-align: justify;
+  }
+  .image {
+    width: 60%;
+    height: 350px;
+    order: -1;
+    text-align: justify;
+  }
+  .image2 {
+    width: 80%;
+    height: 220px;
+    margin: 20px 0px;
+  }
+}

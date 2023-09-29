@@ -1,0 +1,507 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.container {
+  background: #919f88;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 80%;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+  /* justify-content: center; */
+  color: #eee8e3;
+  gap: 20px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 3px;
+}
+
+.description {
+  color: #eee8e3;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.description button {
+  width: 35%;
+  padding: 15px;
+  background-color: #ffbf00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-variant: small-caps;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
+}
+.description button:hover {
+  background-color: #e6a100;
+  transition: all 1s;
+  cursor: pointer;
+}
+.description p {
+  width: 90%;
+  font-weight: 400;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.description h3 {
+  font-size: 50px;
+}
+.imageContainer {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.aboutPhotos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+.about img {
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+.about p {
+  width: 35%;
+  text-align: justify;
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 25px 5px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1700px) {
+  .description p {
+    width: 90%;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .description h3 {
+    font-size: 40px;
+  }
+  .imageContainer {
+    width: 400px;
+    height: 400px;
+  }
+  .container {
+    padding: 15px 25px;
+    margin-top: 10px;
+  }
+  .description button {
+    width: 50%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .description h3 {
+    font-size: 40px;
+  }
+  .description p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1400px) {
+  .imageContainer {
+    width: 400px;
+    height: 400px;
+  }
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .description h3 {
+    font-size: 35px;
+  }
+  .about img {
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .description button {
+    width: 60%;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .description p {
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .container {
+    margin-top: 15px;
+    width: 70%;
+    height: 40%;
+    font-size: 15px;
+  }
+  .imageContainer {
+    width: 300px;
+    height: 300px;
+  }
+  .description h3 {
+    font-size: 30px;
+  }
+  .description p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .description button {
+    width: 80%;
+    font-size: 14px;
+  }
+  .pageWrapper {
+    gap: 10px;
+  }
+  .about {
+    gap: 2px;
+  }
+  .aboutPhotos {
+    display: flex;
+    width: 80%;
+    gap: 10px;
+  }
+  .about img {
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .item h3 {
+    font-size: 17px;
+  }
+  .about p {
+    width: 45%;
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 25px 5px;
+    border-radius: 10px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 1142px) {
+  .container {
+    height: 40%;
+  }
+  .description {
+    align-items: flex-start;
+  }
+  .description h3 {
+    font-size: 30px;
+  }
+  .imageContainer {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 1055px) {
+  .container {
+    padding: 20px;
+    height: 100%;
+    width: 80%;
+    padding-bottom: 10;
+  }
+  .imageContainer {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+  .description {
+    font-size: 16px;
+    width: 50%;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    padding: 10px 10px 30px;
+  }
+  .description h3 {
+    font-size: 30px;
+  }
+  .description p {
+    width: 80%;
+    text-align: left;
+    font-size: 16px;
+  }
+  .description button {
+    font-size: 14px;
+    padding: 15px;
+    width: 60%;
+  }
+
+  .pageWrapper {
+    gap: 10px;
+  }
+  .about {
+    gap: 2px;
+  }
+  .aboutPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    padding: 0px 0px 20px;
+  }
+  .about img {
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .about p {
+    width: 55%;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 25px 5px;
+  }
+}
+
+@media (max-width: 970px) {
+  .container {
+    width: 90%;
+  }
+
+  .description h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 866px) {
+  .container {
+    gap: 0px;
+  }
+  .imageContainer {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .description {
+    width: 60%;
+  }
+  .description h3 {
+    font-size: 30px;
+  }
+  .description p {
+    font-size: 15px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 771px) {
+  .container {
+    padding: 10px;
+    height: 100%;
+    width: 85%;
+  }
+
+  .imageContainer {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .description {
+    padding: 20px;
+    width: 50%;
+  }
+  .description p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .description h3 {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .description button {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .pageWrapper {
+    gap: 10px;
+  }
+  .about {
+    gap: 2px;
+  }
+  .aboutPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    padding: 0px 0px 20px;
+  }
+  .about img {
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .about p {
+    width: 55%;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 25px 5px;
+  }
+}
+@media (max-width: 720px) {
+  .description button {
+    width: 70%;
+    padding: 15px 10px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    gap: 10px;
+  }
+  .container {
+    padding: 20px;
+    flex-wrap: wrap-reverse;
+    height: 100%;
+    width: 80%;
+    padding-bottom: 0px;
+  }
+  .imageContainer {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .description {
+    font-size: 16px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 30px;
+  }
+  .description p {
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+  }
+  .description button {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 20px;
+    flex-wrap: wrap-reverse;
+    height: 100%;
+    width: 90%;
+    padding-bottom: 0px;
+  }
+  .imageContainer {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .description {
+    font-size: 16px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 30px;
+  }
+  .description p {
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+  }
+  .description button {
+    font-size: 16px;
+    padding: 15px;
+  }
+  .about p {
+    width: 60%;
+  }
+  .pageWrapper {
+    gap: 10px;
+  }
+  .about {
+    gap: 2px;
+  }
+  .aboutPhotos {
+    width: 100%;
+    gap: 5px;
+    padding: 0px 0px 20px;
+  }
+  .about img {
+    width: 48%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+@media (max-width: 395px) {
+  .description button {
+    font-size: 16px;
+    padding: 15px;
+    width: 80%;
+  }
+  .description p {
+    width: 90%;
+  }
+}
+@media (max-width: 355px) {
+  .imageContainer {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+  }
+
+  .description h3 {
+    font-size: 20px;
+    padding: 1px;
+  }
+  .description p {
+    width: 100%;
+  }
+  .description button {
+    font-size: 14px;
+  }
+  .about p {
+    width: 70%;
+  }
+}
